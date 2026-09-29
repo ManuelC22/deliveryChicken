@@ -1,0 +1,22 @@
+.cabecera {
+  text-align: center;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.cabecera h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.cabecera p {
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}

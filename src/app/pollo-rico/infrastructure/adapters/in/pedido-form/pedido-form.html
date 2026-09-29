@@ -1,0 +1,14 @@
+<form class="pedido-form" (ngSubmit)="onSubmit()">
+  <h2>Nuevo pedido</h2>
+
+  <label for="cliente">Cliente</label>
+  <input id="cliente" name="cliente" type="text" [(ngModel)]="cliente" placeholder="Nombre del cliente" required />
+
+  <label for="producto">Producto</label>
+  <input id="producto" name="producto" type="text" [(ngModel)]="producto" placeholder="Ej: Pollo asado" required />
+
+  <label for="cantidad">Cantidad</label>
+  <input id="cantidad" name="cantidad" type="number" min="1" [(ngModel)]="cantidad" required />
+
+  <button type="submit">Crear pedido</button>
+</form>

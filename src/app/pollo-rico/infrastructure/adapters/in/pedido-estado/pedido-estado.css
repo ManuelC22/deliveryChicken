@@ -1,0 +1,69 @@
+.pedido-estado {
+  max-width: 420px;
+}
+
+.vacio {
+  color: #777;
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pedido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #eee;
+  background: #fafafa;
+}
+
+.pedido-info .cliente {
+  color: #666;
+  font-size: 0.85rem;
+  margin-left: 0.35rem;
+}
+
+.pedido-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.fecha {
+  font-size: 0.7rem;
+  color: #999;
+}
+
+.estado-creado .badge {
+  background: #fde68a;
+  color: #7a5b00;
+}
+
+.estado-en_proceso .badge {
+  background: #bfdbfe;
+  color: #1e3a8a;
+}
+
+.estado-enviado .badge {
+  background: #bbf7d0;
+  color: #14532d;
+}

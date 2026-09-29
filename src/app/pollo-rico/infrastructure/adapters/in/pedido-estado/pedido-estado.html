@@ -1,0 +1,24 @@
+<section class="pedido-estado">
+  <h2>Estado de tus pedidos</h2>
+
+  @if ((pedidos$ | async); as pedidos) {
+    @if (pedidos.length === 0) {
+      <p class="vacio">Todavía no has creado ningún pedido.</p>
+    } @else {
+      <ul>
+        @for (pedido of pedidos; track pedido.id) {
+          <li class="pedido" [class]="'estado-' + pedido.estado.toLowerCase()">
+            <div class="pedido-info">
+              <strong>{{ pedido.producto }}</strong> x{{ pedido.cantidad }}
+              <span class="cliente">para {{ pedido.cliente }}</span>
+            </div>
+            <div class="pedido-meta">
+              <span class="badge">{{ pedido.estado }}</span>
+              <span class="fecha">{{ pedido.creadoEn | date: 'short' }}</span>
+            </div>
+          </li>
+        }
+      </ul>
+    }
+  }
+</section>
