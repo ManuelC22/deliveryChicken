@@ -3,7 +3,7 @@ import { CONSULTAR_PEDIDOS_PORT } from './application/ports/in/consultar-pedidos
 import { CREAR_PEDIDO_PORT } from './application/ports/in/crear-pedido.port';
 import { EVENT_PUBLISHER_PORT } from './application/ports/out/event-publisher.port';
 import { PEDIDO_REPOSITORY_PORT } from './application/ports/out/pedido-repository.port';
-import { ConsultarPedidosUseCase } from './application/use-cases/consultar-pedidos.use-case';
+import { ConsultarPedidosUseCase } from './application/use-cases/pedidos/consultar-pedidos.use-case';
 import { CrearPedidoUseCase } from './application/use-cases/pedidos/crear-pedido.use-case';
 import { InMemoryPedidoRepositoryAdapter } from './infrastructure/adapters/out/in-memory-pedido-repository.adapter';
 import { SimuladorTeLoLlevamosAdapter } from './infrastructure/adapters/out/simulador-telollevamos.adapter';

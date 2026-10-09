@@ -12,6 +12,7 @@
  */
 
 import { EstadoPedido } from "./EstadoPedido";
+export { EstadoPedido } from "./EstadoPedido";
 
 
 
